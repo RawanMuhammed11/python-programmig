@@ -1,0 +1,5 @@
+name=input('enter name:')
+first_name=name.split()
+last_name=name.split()
+print('your first name is :',first_name[0])
+print('your last name is: ',last_name[-1])
