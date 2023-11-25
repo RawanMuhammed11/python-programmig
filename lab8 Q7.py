@@ -1,7 +1,5 @@
 def reversefun(originalString):
-    reverseString=''
-    for char in originalString:
-            reverseString=char+reverseString
+    reverseString=originalString[::-1]
     return reverseString
 
 def main():
