@@ -1,14 +1,15 @@
-def reverse_string(input_string):
-    reversed_string = ''
-    for char in input_string:
-        if char != ' ':
-            reversed_string = char + reversed_string
-    return reversed_string
+def reversefun(originalString):
+    reverseString=''
+    for char in originalString:
+        if char != ' ':   # if user add any spaces in the originalString > skip it and reverse other characters
+            reverseString=char+reverseString
+
+    return reverseString
 
 def main():
-    user_input = input("Enter your string: ")
-    reversed_result = reverse_string(user_input)
-    print(f"The reversed string without reversing spaces is: '{reversed_result}'")
+    originalString=input("enter the original string :")
+    result=reversefun(originalString)
+    print(f"the reversed string is :{result}")
 
-if __name__ == "__main__":
+if __name__=="__main__":
     main()
