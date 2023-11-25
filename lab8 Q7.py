@@ -1,9 +1,7 @@
 def reversefun(originalString):
     reverseString=''
     for char in originalString:
-        if char != ' ':   # if user add any spaces in the originalString > skip it and reverse other characters
             reverseString=char+reverseString
-
     return reverseString
 
 def main():
