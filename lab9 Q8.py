@@ -1,7 +1,7 @@
 # first,function to check errors
 def error_check():
     length=0
-    while length<=0:  # looping  when user enter negative numbers until user enter positive number
+    while length<=0:  # looping  when user enter negative numbers until user enter positive number or when enter any character until enter numeric value
         valid_input=input('please enter length in feet :')
         #to make sure that the user enters a numeric values
         if valid_input.isdigit():
