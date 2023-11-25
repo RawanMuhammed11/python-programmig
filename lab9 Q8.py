@@ -3,11 +3,9 @@ def error_check():
     length=0
     while length<=0:  # looping  when user enter negative numbers until user enter positive number or when enter any character until enter numeric value
         valid_input=input('please enter length in feet :')
-        #to make sure that the user enters a numeric values
+        #to make sure that the user enters a numeric(positive onlyyyy )values
         if valid_input.isdigit():
             length=int(valid_input)
-            if length<=0:
-                print('please enter positive number only , TRY AGAIN')
         else:
             print("invalid input ,enter numeric values")
 
