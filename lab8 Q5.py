@@ -1,18 +1,21 @@
-def compute_grade(score):
-        if score>= 90:
-            return 'A'
-        elif score >= 80:
-            return 'B'
-        elif score >= 70:
-            return 'C'
-        elif score >= 60:
-            return 'D'
-        else:
-            return 'F'
+def studentscore(score):
+    score = float(score)
+    if score >= 90:
+        return "A"
+    elif score >= 85:
+        return "B"
+    elif score >= 70:
+        return "C"
+    elif score >= 60:
+        return "D"
+    else:
+        return "F"
 
-grades = input("enter student grade :").split()
-#take each grade in grades list > store it in scores list
-scores= [float(grade) for grade in grades]
-scores = [compute_grade(score) for score in scores]
-for i in range(len(scores)):
-        print(f" Grade = {grades[i]}, Score = {scores[i]} ")
+scorelst = input("enter the score:").split()
+gradelst = []
+for score in scorelst:
+    grade = studentscore(score)
+    gradelst.append(grade)
+
+print("studentscore=", scorelst)
+print("studentgrade=", gradelst)
